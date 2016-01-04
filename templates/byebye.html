@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var count = 6;
+        var redirect = "http://www.usehyper.com";
+         
+        function countDown(){
+            var timer = document.getElementById("timer");
+            if(count > 0){
+                count--;
+                timer.innerHTML = "This page will redirect in "+count+" seconds.";
+                setTimeout("countDown()", 1000);
+            }else{
+                window.location.href = redirect;
+            }
+        }
+    </script>
+
+    <header>
+    <meta charset="utf-8">
+
+    <title>The Exclusive Cloud Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/hyper-tarmac/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s3-us-west-1.amazonaws.com/hyper-tarmac/static/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css"  href= "{{ url_for('static',filename='css_files/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css_files/main_style.css') }}">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css_files/custom.css') }}">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css_files/bootstrap-social.css') }}">
+    </header>   
+        <div id="react"><div data-reactid=".0"><div class="app-install-footer" id="app-install-footer" data-reactid=".0.0"><a href="https://goo.gl/rETE5F" data-reactid=".0.0.0"></a></div><span data-reactid=".0.1"><span data-reactid=".0.1.$=10"></span></span><div class="masthead-container" data-reactid=".0.2"><span data-reactid=".0.2.0"></span><div class="masthead" id="masthead" data-reactid=".0.2.1" style="border-bottom-color: rgb(238, 238, 238); background-color: rgba(255, 255, 255, 0.980392);"><a class="bare" href="./The Hyper Travel Company_files/The Hyper Travel Company.html" data-reactid=".0.2.1.0"><div class="brand-wrapper" data-reactid=".0.2.1.0.0"><div class="logo" data-reactid=".0.2.1.0.0.0"></div><div class="brand-name" data-reactid=".0.2.1.0.0.1">HYPER</div></div></a><ul class="menu-items" data-reactid=".0.2.1.1"><li class="no-underline" data-reactid=".0.2.1.1.3"><a href="https://goo.gl/rETE5F" data-reactid=".0.2.1.1.3.0"><div class="app-store-badge" data-reactid=".0.2.1.1.3.0.0"></div></a></li><span data-reactid=".0.2.1.1.4"></span></ul><div class="text-app-install-container" id="text-app-install-container" data-reactid=".0.2.1.2" style="opacity: 0; display: none;"><input class="phone-input" placeholder="(555)-555-5555" value="" data-reactid=".0.2.1.2.0"><div class="submit-btn" data-reactid=".0.2.1.2.1" style="background-color: rgb(0, 136, 255);">TEXT ME THE LINK</div></div></div></div><video autoplay="" loop="" muted="" class="hero-video" id="hero-video" data-reactid=".0.3"><source src="https://s3-us-west-1.amazonaws.com/hyper-tarmac/static/hero-video.mp4" type="video/mp4" data-reactid=".0.3.0"></video><div class="hero-wrapper" id="hero-wrapper" data-reactid=".0.4" style="background-color: rgba(255, 255, 255, 0.831373);"><div class="guide-arrow clickable velocity-animating" id="guide-arrow" data-reactid=".0.4.1" style="bottom: 64px; opacity: 0.1;"></div><div class="contents" data-reactid=".0.4.2"><h2 class="tagline" data-reactid=".0.4.2.0"><span data-reactid=".0.4.2.0.0">Sorry. You </span><br class="wbr" data-reactid=".0.4.2.0.1"><span class="madlib-underline" data-reactid=".0.4.2.0.2">can't</span><span data-reactid=".0.4.2.0.3"> go further.</span></h2><div class="subtitle" data-reactid=".0.4.2.1">Traveling is the best form of education. Book a trip. Now.
+        <span id="timer"></span>
+        </ul><div class="clearfix" data-reactid=".0.a.2">
+        </div></div></div></div>
+        
+        <script type="text/javascript">countDown();</script>
+
+    
+</body>
+</html>
